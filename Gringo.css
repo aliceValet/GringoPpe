@@ -99,6 +99,8 @@ header{
   margin-left: auto;
   margin-right: auto;
   margin-bottom:1vw;
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 #green-circle a {
@@ -113,15 +115,9 @@ header{
   outline : none;
   text-decoration:none;
   text-shadow: 2px 2px 5px #898D8D;
+  -webkit-tap-highlight-color: transparent;
 
-}
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 
 #green-circle img{
