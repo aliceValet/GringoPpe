@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box; }
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: bold;
+  background: #000000;
+  color:#FFFFFF;
+}
+
+header{
+  padding-top:1px;
+  height: 25vw;
+  width:100%;
+  background: #A7D500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#FFFFFF;
+  font-size: 6vw;
+  text-shadow: 2px 2px 5px #898D8D;
+  margin-bottom: 1.5vw;
+}
+
+#voiture {
+  background-image: url("car.png");
+  height: 1200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  opacity:0.4;
+}
+#red-circle {
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vw;
+  margin-bottom:1vw;
+}
+#red-circle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  background: #9A3324; 
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1vw;
+}
+#orange-circle {
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1vw;
+  margin-top: 6vw
+}
+#orange-circle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  background: #D76B00; 
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1vw;
+}
+#green-circle {
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1vw;
+  margin-top: 6vw;
+  
+}
+#green-circle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  background: #A7D500; 
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1vw;
+}
+
+#green-circle a {
+  float:left;
+  width:100%;
+  padding-top:50%;
+  line-height:1em;
+  margin-top:-0.5em;
+  text-align:center;
+  font-size:6vw;
+  color:white;
+  text-decoration:none;
+  text-shadow: 2px 2px 5px #898D8D;
+
+}
+
+#green-circle img{
+  object-position: 50% 50%;
+}
+
+.hovicon {
+    
+    font-size: 45px;
+    line-height: 90px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: #fff;
+}
+.hovicon.small {
+    font-size: 20px;
+    line-height:45px;
+    width:45px;
+    height:45px;
+    margin:7px;
+}
+.hovicon.mini {
+    font-size: 15px;
+    line-height:32px;
+    width:30px;
+    height:30px;
+    margin:7px;
+}
+.hovicon.auto-width {
+    width: auto;
+    height: auto;
+    padding: 15px;
+}
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Effect 8 */
+ .hovicon.effect-8 {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-transition: -webkit-transform ease-out 0.1s , background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s infinite, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-8:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon.effect-8 {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+    color: #fff;
+}
+.hovicon.effect-8 i {
+    color: #fff;
+}
+.hovicon.effect-8:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms infinite;
+    animation: sonarEffect 1.3s ease-out 75ms infinite;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.5) infinite;
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #A7D500, 0 0 0 10px rgba(255, 2a55, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
