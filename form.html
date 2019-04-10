@@ -5,35 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="GreenNGo application for easing traffic">
   <link rel="stylesheet" href="form.css">
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src=js/app.js></script>
+  
   <title>Green N Go</title>
   <!-- Insert link to stylesheet here -->
 </head>
 <body>
+  <script src="data.json"></script>
+  <script src="form.js"></script>
 	<header>
     	<h1>Green'N Go</h1>
   	</header>
-  	<form>
+  	<form onsubmit="displayProut();return false">
   		<div>
 	  		<p>Nombre de véhicules à l'intersection :</p>
-	  		<input type="number" class="vehicles">
+	  		<input id="total" type="number" class="vehicles" required >
 	  	</div>
   		
   		<div>
 	  		<p>Nombre de véhicules prioritaires ( pompiers, police, SAMU) :</p>
-	  		<input type="number" class="priority">
+	  		<input id="prio" type="number" class="priority" required>
 	  	</div>
 	  	<div>
-	  		<input type="submit" value="Envoyer" onclick="displayProut()">
+	  		<input type="submit" value="Envoyer">
+        <p id="blabla"></p>
 	  	</div>
   	</form>
     <div >
     	<a href="index.html"><img class="arrows" id="leftAr" src="leftArrow.png" alt="Car oriented towards left" ></a>
 	   	<a href="index.html"><img class="cars" id="left" src="car_grey_left.png" alt="Car oriented towards left" ></a>
 	    
-	    <a href="#"><img class="arrows" id="rightAr" src="rightArrow.png" alt="Car oriented towards left" ></a>
-	    <a href="#"><img class="cars" id="right" src="car_grey.png" alt="Car oriented towards right" ></a>
+	    <a href="demo.html"><img class="arrows" id="rightAr" src="rightArrow.png" alt="Car oriented towards left" ></a>
+	    <a href="demo.html"><img class="cars" id="right" src="car_grey.png" alt="Car oriented towards right" ></a>
 
   </div>
 
